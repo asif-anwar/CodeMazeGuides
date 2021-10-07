@@ -36,7 +36,7 @@ namespace Tests
 			var order = new Order { Item = "Pizza with extra cheese" };
 
 			var orderingService = new FoodOrderingService();
-			var appService = new AppService();
+			var appService = new AppService(); 
 			var mailService = new MailService();
 
 			orderingService.FoodPrepared += appService.OnFoodPrepared;
